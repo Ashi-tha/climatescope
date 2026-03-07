@@ -91,6 +91,49 @@ PLOTLY_THEME = dict(
 )
 
 
+# ── Auto-setup: download & process data if not present ───────────────────────
+
+def run_pipeline_if_needed() -> None:
+    """On Streamlit Cloud, download and process data automatically on first run."""
+    base = Path("data/processed")
+    if (base / "weather_clean.parquet").exists() or (base / "weather_clean.csv").exists():
+        return  # already processed, nothing to do
+
+    import os, subprocess
+    st.info("⏳  First run detected — downloading and processing weather data. This takes 2–3 minutes...")
+
+    # Set Kaggle credentials from Streamlit secrets or environment
+    try:
+        os.environ["KAGGLE_USERNAME"] = st.secrets.get("KAGGLE_USERNAME", os.getenv("KAGGLE_USERNAME", ""))
+        os.environ["KAGGLE_KEY"]      = st.secrets.get("KAGGLE_KEY",      os.getenv("KAGGLE_KEY", ""))
+    except Exception:
+        pass
+
+    root = Path(__file__).parent.parent
+
+    steps = [
+        ("src/01_data_acquisition.py", "📥 Downloading dataset from Kaggle..."),
+        ("src/03_data_cleaning.py",    "🧹 Cleaning and processing data..."),
+    ]
+    progress = st.progress(0)
+    for i, (script, msg) in enumerate(steps):
+        st.write(msg)
+        result = subprocess.run(
+            [sys.executable, str(root / script)],
+            capture_output=True, text=True, cwd=str(root)
+        )
+        if result.returncode != 0:
+            st.error(f"❌ Pipeline failed at {script}:\n{result.stderr[-1000:]}")
+            st.stop()
+        progress.progress((i + 1) / len(steps))
+
+    st.success("✅ Data ready! Loading dashboard...")
+    st.rerun()
+
+
+run_pipeline_if_needed()
+
+
 # ── Data loading ──────────────────────────────────────────────────────────────
 
 @st.cache_data

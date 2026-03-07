@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # 🌍 ClimateScope
 ### Visualizing Global Weather Trends and Extreme Events
 
@@ -156,3 +157,7 @@ dashboard/app.py         →  Interactive Streamlit app
 **Global Weather Repository** — Kaggle  
 https://www.kaggle.com/datasets/nelgiriyewithana/global-weather-repository  
 Daily-updated worldwide weather data: temperature, humidity, precipitation, wind speed, UV index, pressure, visibility, and more.
+=======
+# climatescope
+Global weather visualization dashboard
+>>>>>>> 5ab5246ac6c1660ffa74a9eb4b4032d667a4fa75
