@@ -1,0 +1,319 @@
+{
+  "total_rows": 127841,
+  "total_columns": 41,
+  "schema": {
+    "country": {
+      "dtype": "object",
+      "non_null": 127841
+    },
+    "location_name": {
+      "dtype": "object",
+      "non_null": 127841
+    },
+    "latitude": {
+      "dtype": "float64",
+      "non_null": 127841
+    },
+    "longitude": {
+      "dtype": "float64",
+      "non_null": 127841
+    },
+    "timezone": {
+      "dtype": "object",
+      "non_null": 127841
+    },
+    "last_updated_epoch": {
+      "dtype": "int64",
+      "non_null": 127841
+    },
+    "last_updated": {
+      "dtype": "object",
+      "non_null": 127841
+    },
+    "temperature_celsius": {
+      "dtype": "float64",
+      "non_null": 127841
+    },
+    "temperature_fahrenheit": {
+      "dtype": "float64",
+      "non_null": 127841
+    },
+    "condition_text": {
+      "dtype": "object",
+      "non_null": 127841
+    },
+    "wind_mph": {
+      "dtype": "float64",
+      "non_null": 127841
+    },
+    "wind_kph": {
+      "dtype": "float64",
+      "non_null": 127841
+    },
+    "wind_degree": {
+      "dtype": "int64",
+      "non_null": 127841
+    },
+    "wind_direction": {
+      "dtype": "object",
+      "non_null": 127841
+    },
+    "pressure_mb": {
+      "dtype": "float64",
+      "non_null": 127841
+    },
+    "pressure_in": {
+      "dtype": "float64",
+      "non_null": 127841
+    },
+    "precip_mm": {
+      "dtype": "float64",
+      "non_null": 127841
+    },
+    "precip_in": {
+      "dtype": "float64",
+      "non_null": 127841
+    },
+    "humidity": {
+      "dtype": "int64",
+      "non_null": 127841
+    },
+    "cloud": {
+      "dtype": "int64",
+      "non_null": 127841
+    },
+    "feels_like_celsius": {
+      "dtype": "float64",
+      "non_null": 127841
+    },
+    "feels_like_fahrenheit": {
+      "dtype": "float64",
+      "non_null": 127841
+    },
+    "visibility_km": {
+      "dtype": "float64",
+      "non_null": 127841
+    },
+    "visibility_miles": {
+      "dtype": "float64",
+      "non_null": 127841
+    },
+    "uv_index": {
+      "dtype": "float64",
+      "non_null": 127841
+    },
+    "gust_mph": {
+      "dtype": "float64",
+      "non_null": 127841
+    },
+    "gust_kph": {
+      "dtype": "float64",
+      "non_null": 127841
+    },
+    "air_quality_Carbon_Monoxide": {
+      "dtype": "float64",
+      "non_null": 127841
+    },
+    "air_quality_Ozone": {
+      "dtype": "float64",
+      "non_null": 127841
+    },
+    "air_quality_Nitrogen_dioxide": {
+      "dtype": "float64",
+      "non_null": 127841
+    },
+    "air_quality_Sulphur_dioxide": {
+      "dtype": "float64",
+      "non_null": 127841
+    },
+    "air_quality_PM2.5": {
+      "dtype": "float64",
+      "non_null": 127841
+    },
+    "air_quality_PM10": {
+      "dtype": "float64",
+      "non_null": 127841
+    },
+    "air_quality_us-epa-index": {
+      "dtype": "int64",
+      "non_null": 127841
+    },
+    "air_quality_gb-defra-index": {
+      "dtype": "int64",
+      "non_null": 127841
+    },
+    "sunrise": {
+      "dtype": "object",
+      "non_null": 127841
+    },
+    "sunset": {
+      "dtype": "object",
+      "non_null": 127841
+    },
+    "moonrise": {
+      "dtype": "object",
+      "non_null": 127841
+    },
+    "moonset": {
+      "dtype": "object",
+      "non_null": 127841
+    },
+    "moon_phase": {
+      "dtype": "object",
+      "non_null": 127841
+    },
+    "moon_illumination": {
+      "dtype": "int64",
+      "non_null": 127841
+    }
+  },
+  "missing": {},
+  "numerics": {
+    "temperature_celsius": {
+      "count": 127841.0,
+      "mean": 21.48,
+      "std": 9.66,
+      "min": -29.8,
+      "25%": 16.2,
+      "50%": 24.1,
+      "75%": 28.0,
+      "max": 49.2
+    },
+    "humidity": {
+      "count": 127841.0,
+      "mean": 66.3,
+      "std": 24.02,
+      "min": 2.0,
+      "25%": 50.0,
+      "50%": 72.0,
+      "75%": 85.0,
+      "max": 100.0
+    },
+    "precip_mm": {
+      "count": 127841.0,
+      "mean": 0.14,
+      "std": 0.57,
+      "min": 0.0,
+      "25%": 0.0,
+      "50%": 0.0,
+      "75%": 0.03,
+      "max": 42.24
+    },
+    "wind_kph": {
+      "count": 127841.0,
+      "mean": 12.96,
+      "std": 11.79,
+      "min": 3.6,
+      "25%": 6.1,
+      "50%": 11.2,
+      "75%": 17.6,
+      "max": 2963.2
+    },
+    "cloud": {
+      "count": 127841.0,
+      "mean": 40.01,
+      "std": 34.1,
+      "min": 0.0,
+      "25%": 0.0,
+      "50%": 30.0,
+      "75%": 75.0,
+      "max": 100.0
+    },
+    "uv_index": {
+      "count": 127841.0,
+      "mean": 3.4,
+      "std": 3.56,
+      "min": 0.0,
+      "25%": 0.1,
+      "50%": 2.0,
+      "75%": 6.0,
+      "max": 16.3
+    },
+    "pressure_mb": {
+      "count": 127841.0,
+      "mean": 1014.08,
+      "std": 10.54,
+      "min": 947.0,
+      "25%": 1010.0,
+      "50%": 1014.0,
+      "75%": 1018.0,
+      "max": 3006.0
+    },
+    "visibility_km": {
+      "count": 127841.0,
+      "mean": 9.51,
+      "std": 2.68,
+      "min": 0.0,
+      "25%": 10.0,
+      "50%": 10.0,
+      "75%": 10.0,
+      "max": 32.0
+    }
+  },
+  "geography": {
+    "unique_countries": 211,
+    "top_countries": {
+      "Bulgaria": 1514,
+      "Indonesia": 1315,
+      "Thailand": 1312,
+      "Sudan": 1312,
+      "Turkey": 1311,
+      "Bolivia": 1304,
+      "Iran": 1281,
+      "Belgium": 1245,
+      "Madagascar": 1115,
+      "Vietnam": 1097
+    },
+    "unique_locations": 257
+  },
+  "temporal": {
+    "column": "last_updated_epoch",
+    "start": "1970-01-01",
+    "end": "1970-01-01",
+    "span_days": 0
+  },
+  "anomalies": {
+    "temperature_celsius": {
+      "out_of_range": 0,
+      "bounds": [
+        -90,
+        60
+      ]
+    },
+    "humidity": {
+      "out_of_range": 0,
+      "bounds": [
+        0,
+        100
+      ]
+    },
+    "precip_mm": {
+      "out_of_range": 0,
+      "bounds": [
+        0,
+        1000
+      ]
+    },
+    "wind_kph": {
+      "out_of_range": 1,
+      "bounds": [
+        0,
+        500
+      ]
+    },
+    "pressure_mb": {
+      "out_of_range": 2,
+      "bounds": [
+        870,
+        1085
+      ]
+    },
+    "uv_index": {
+      "out_of_range": 0,
+      "bounds": [
+        0,
+        20
+      ]
+    }
+  }
+}

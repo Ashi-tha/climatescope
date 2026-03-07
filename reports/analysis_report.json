@@ -1,0 +1,621 @@
+{
+  "distributions": {
+    "temperature_celsius": {
+      "mean": 21.478,
+      "std": 9.663,
+      "skew": -0.894,
+      "kurtosis": 0.943
+    },
+    "humidity": {
+      "mean": 66.3,
+      "std": 24.017,
+      "skew": -0.629,
+      "kurtosis": -0.544
+    },
+    "precip_mm": {
+      "mean": 0.136,
+      "std": 0.567,
+      "skew": 17.686,
+      "kurtosis": 661.632
+    },
+    "wind_kph": {
+      "mean": 12.94,
+      "std": 8.42,
+      "skew": 1.676,
+      "kurtosis": 17.219
+    },
+    "pressure_mb": {
+      "mean": 1014.048,
+      "std": 7.014,
+      "skew": 0.04,
+      "kurtosis": 1.861
+    },
+    "uv_index": {
+      "mean": 3.402,
+      "std": 3.561,
+      "skew": 0.864,
+      "kurtosis": -0.207
+    }
+  },
+  "correlations": {
+    "matrix": {
+      "temperature_celsius": {
+        "temperature_celsius": 1.0,
+        "humidity": -0.344,
+        "precip_mm": 0.031,
+        "wind_kph": 0.123,
+        "pressure_mb": -0.42,
+        "uv_index": 0.489
+      },
+      "humidity": {
+        "temperature_celsius": -0.344,
+        "humidity": 1.0,
+        "precip_mm": 0.174,
+        "wind_kph": -0.101,
+        "pressure_mb": -0.008,
+        "uv_index": -0.554
+      },
+      "precip_mm": {
+        "temperature_celsius": 0.031,
+        "humidity": 0.174,
+        "precip_mm": 1.0,
+        "wind_kph": 0.011,
+        "pressure_mb": -0.126,
+        "uv_index": -0.063
+      },
+      "wind_kph": {
+        "temperature_celsius": 0.123,
+        "humidity": -0.101,
+        "precip_mm": 0.011,
+        "wind_kph": 1.0,
+        "pressure_mb": -0.176,
+        "uv_index": 0.071
+      },
+      "pressure_mb": {
+        "temperature_celsius": -0.42,
+        "humidity": -0.008,
+        "precip_mm": -0.126,
+        "wind_kph": -0.176,
+        "pressure_mb": 1.0,
+        "uv_index": -0.076
+      },
+      "uv_index": {
+        "temperature_celsius": 0.489,
+        "humidity": -0.554,
+        "precip_mm": -0.063,
+        "wind_kph": 0.071,
+        "pressure_mb": -0.076,
+        "uv_index": 1.0
+      }
+    },
+    "top_pairs": [
+      {
+        "var1": "humidity",
+        "var2": "uv_index",
+        "r": -0.554
+      },
+      {
+        "var1": "temperature_celsius",
+        "var2": "uv_index",
+        "r": 0.489
+      },
+      {
+        "var1": "temperature_celsius",
+        "var2": "pressure_mb",
+        "r": -0.42
+      },
+      {
+        "var1": "temperature_celsius",
+        "var2": "humidity",
+        "r": -0.344
+      },
+      {
+        "var1": "wind_kph",
+        "var2": "pressure_mb",
+        "r": -0.176
+      },
+      {
+        "var1": "humidity",
+        "var2": "precip_mm",
+        "r": 0.174
+      },
+      {
+        "var1": "precip_mm",
+        "var2": "pressure_mb",
+        "r": -0.126
+      },
+      {
+        "var1": "temperature_celsius",
+        "var2": "wind_kph",
+        "r": 0.123
+      },
+      {
+        "var1": "humidity",
+        "var2": "wind_kph",
+        "r": -0.101
+      },
+      {
+        "var1": "pressure_mb",
+        "var2": "uv_index",
+        "r": -0.076
+      }
+    ]
+  },
+  "seasonal": {
+    "temperature_celsius": {
+      "mean": {
+        "Winter": 21.48
+      },
+      "std": {
+        "Winter": 9.66
+      },
+      "min": {
+        "Winter": -29.8
+      },
+      "max": {
+        "Winter": 49.2
+      }
+    },
+    "precip_mm": {
+      "mean": {
+        "Winter": 0.14
+      },
+      "std": {
+        "Winter": 0.57
+      },
+      "min": {
+        "Winter": 0.0
+      },
+      "max": {
+        "Winter": 42.24
+      }
+    },
+    "humidity": {
+      "mean": {
+        "Winter": 66.3
+      },
+      "std": {
+        "Winter": 24.02
+      },
+      "min": {
+        "Winter": 2
+      },
+      "max": {
+        "Winter": 100
+      }
+    },
+    "monthly_temp": {
+      "1": 21.48
+    }
+  },
+  "extremes": {
+    "hottest": [
+      {
+        "country": "Kuwait",
+        "location_name": "Kuwait City",
+        "date": "1970-01-01",
+        "last_updated": "2024-06-19 16:45",
+        "temperature_celsius": 49.2
+      },
+      {
+        "country": "Iraq",
+        "location_name": "Baghdad",
+        "date": "1970-01-01",
+        "last_updated": "2024-06-22 16:45",
+        "temperature_celsius": 49.1
+      },
+      {
+        "country": "Iraq",
+        "location_name": "Baghdad",
+        "date": "1970-01-01",
+        "last_updated": "2024-07-11 15:45",
+        "temperature_celsius": 49.1
+      },
+      {
+        "country": "Kuwait",
+        "location_name": "Kuwait City",
+        "date": "1970-01-01",
+        "last_updated": "2024-06-27 16:15",
+        "temperature_celsius": 48.9
+      },
+      {
+        "country": "Iraq",
+        "location_name": "Baghdad",
+        "date": "1970-01-01",
+        "last_updated": "2024-07-12 15:45",
+        "temperature_celsius": 48.8
+      },
+      {
+        "country": "Kuwait",
+        "location_name": "Kuwait City",
+        "date": "1970-01-01",
+        "last_updated": "2025-07-28 11:30",
+        "temperature_celsius": 48.8
+      },
+      {
+        "country": "Kuwait",
+        "location_name": "Kuwait City",
+        "date": "1970-01-01",
+        "last_updated": "2025-06-16 12:00",
+        "temperature_celsius": 48.6
+      },
+      {
+        "country": "Iraq",
+        "location_name": "Baghdad",
+        "date": "1970-01-01",
+        "last_updated": "2024-06-21 16:30",
+        "temperature_celsius": 48.4
+      },
+      {
+        "country": "Iraq",
+        "location_name": "Baghdad",
+        "date": "1970-01-01",
+        "last_updated": "2024-07-05 15:45",
+        "temperature_celsius": 48.3
+      },
+      {
+        "country": "Kuwait",
+        "location_name": "Kuwait City",
+        "date": "1970-01-01",
+        "last_updated": "2025-08-13 11:30",
+        "temperature_celsius": 48.2
+      }
+    ],
+    "coldest": [
+      {
+        "country": "Mongolia",
+        "location_name": "Ulaanbaatar",
+        "date": "1970-01-01",
+        "last_updated": "2026-01-18 15:00",
+        "temperature_celsius": -29.8
+      },
+      {
+        "country": "Mongolia",
+        "location_name": "Ulaanbaatar",
+        "date": "1970-01-01",
+        "last_updated": "2026-01-20 15:15",
+        "temperature_celsius": -28.9
+      },
+      {
+        "country": "Belarus",
+        "location_name": "Minsk",
+        "date": "1970-01-01",
+        "last_updated": "2026-02-02 10:00",
+        "temperature_celsius": -26.9
+      },
+      {
+        "country": "Mongolia",
+        "location_name": "Ulaanbaatar",
+        "date": "1970-01-01",
+        "last_updated": "2026-01-16 15:15",
+        "temperature_celsius": -26.8
+      },
+      {
+        "country": "Mongolia",
+        "location_name": "Ulaanbaatar",
+        "date": "1970-01-01",
+        "last_updated": "2026-01-17 15:00",
+        "temperature_celsius": -25.9
+      },
+      {
+        "country": "Russia",
+        "location_name": "Chi-Chi-Erh",
+        "date": "1970-01-01",
+        "last_updated": "2026-01-01 14:15",
+        "temperature_celsius": -25.8
+      },
+      {
+        "country": "Belarus",
+        "location_name": "Minsk",
+        "date": "1970-01-01",
+        "last_updated": "2026-01-16 10:15",
+        "temperature_celsius": -25.8
+      },
+      {
+        "country": "Kazakhstan",
+        "location_name": "Astana",
+        "date": "1970-01-01",
+        "last_updated": "2026-01-17 12:00",
+        "temperature_celsius": -25.7
+      },
+      {
+        "country": "Mongolia",
+        "location_name": "Ulaanbaatar",
+        "date": "1970-01-01",
+        "last_updated": "2026-01-21 15:00",
+        "temperature_celsius": -25.7
+      },
+      {
+        "country": "Canada",
+        "location_name": "Ottawa",
+        "date": "1970-01-01",
+        "last_updated": "2026-01-25 02:00",
+        "temperature_celsius": -25.0
+      }
+    ],
+    "wettest": [
+      {
+        "country": "Jamaica",
+        "location_name": "Port Royal",
+        "date": "1970-01-01",
+        "last_updated": "2024-11-05 04:00",
+        "precip_mm": 42.24
+      },
+      {
+        "country": "Vietnam",
+        "location_name": "Hanoi",
+        "date": "1970-01-01",
+        "last_updated": "2024-09-07 19:00",
+        "precip_mm": 27.82
+      },
+      {
+        "country": "Guinea-Bissau",
+        "location_name": "Bissau",
+        "date": "1970-01-01",
+        "last_updated": "2025-07-11 08:30",
+        "precip_mm": 27.4
+      },
+      {
+        "country": "Jamaica",
+        "location_name": "Port Royal",
+        "date": "1970-01-01",
+        "last_updated": "2024-10-20 04:30",
+        "precip_mm": 26.38
+      },
+      {
+        "country": "Sierra Leone",
+        "location_name": "Freetown",
+        "date": "1970-01-01",
+        "last_updated": "2025-09-05 08:00",
+        "precip_mm": 26.28
+      },
+      {
+        "country": "Fiji Islands",
+        "location_name": "Suva",
+        "date": "1970-01-01",
+        "last_updated": "2024-08-26 00:00",
+        "precip_mm": 26.22
+      },
+      {
+        "country": "Sierra Leone",
+        "location_name": "Freetown",
+        "date": "1970-01-01",
+        "last_updated": "2025-07-05 08:30",
+        "precip_mm": 23.51
+      },
+      {
+        "country": "Belize",
+        "location_name": "Belmopan",
+        "date": "1970-01-01",
+        "last_updated": "2025-06-28 02:30",
+        "precip_mm": 22.65
+      },
+      {
+        "country": "Bangladesh",
+        "location_name": "Dhaka",
+        "date": "1970-01-01",
+        "last_updated": "2025-05-29 14:45",
+        "precip_mm": 21.67
+      },
+      {
+        "country": "Gambia",
+        "location_name": "Banjul",
+        "date": "1970-01-01",
+        "last_updated": "2024-10-10 09:45",
+        "precip_mm": 20.71
+      }
+    ],
+    "windiest": [
+      {
+        "country": "Ethiopia",
+        "location_name": "Addis Ababa",
+        "date": "1970-01-01",
+        "last_updated": "2024-06-21 16:30",
+        "wind_kph": 272.2
+      },
+      {
+        "country": "Burundi",
+        "location_name": "Bujumbura",
+        "date": "1970-01-01",
+        "last_updated": "2024-05-21 16:45",
+        "wind_kph": 258.8
+      },
+      {
+        "country": "Saint Kitts and Nevis",
+        "location_name": "Basseterre",
+        "date": "1970-01-01",
+        "last_updated": "2024-06-28 09:15",
+        "wind_kph": 205.9
+      },
+      {
+        "country": "Fiji Islands",
+        "location_name": "Suva",
+        "date": "1970-01-01",
+        "last_updated": "2024-05-20 02:00",
+        "wind_kph": 172.1
+      },
+      {
+        "country": "Iceland",
+        "location_name": "Vestmannaeyjar",
+        "date": "1970-01-01",
+        "last_updated": "2025-02-06 10:15",
+        "wind_kph": 91.1
+      },
+      {
+        "country": "Barbados",
+        "location_name": "Bridgetown",
+        "date": "1970-01-01",
+        "last_updated": "2024-07-01 09:15",
+        "wind_kph": 81.0
+      },
+      {
+        "country": "Norway",
+        "location_name": "Oslo",
+        "date": "1970-01-01",
+        "last_updated": "2024-08-27 14:15",
+        "wind_kph": 78.1
+      },
+      {
+        "country": "Iceland",
+        "location_name": "Vestmannaeyjar",
+        "date": "1970-01-01",
+        "last_updated": "2024-11-15 09:00",
+        "wind_kph": 76.7
+      },
+      {
+        "country": "Norway",
+        "location_name": "Oslo",
+        "date": "1970-01-01",
+        "last_updated": "2024-09-11 14:15",
+        "wind_kph": 76.0
+      },
+      {
+        "country": "Iceland",
+        "location_name": "Vestmannaeyjar",
+        "date": "1970-01-01",
+        "last_updated": "2024-12-25 10:15",
+        "wind_kph": 76.0
+      }
+    ],
+    "highest_uv": [
+      {
+        "country": "Zambia",
+        "location_name": "Lusaka",
+        "date": "1970-01-01",
+        "last_updated": "2025-02-10 12:30",
+        "uv_index": 16.3
+      },
+      {
+        "country": "South Africa",
+        "location_name": "Pretoria",
+        "date": "1970-01-01",
+        "last_updated": "2025-01-16 12:00",
+        "uv_index": 16.1
+      },
+      {
+        "country": "Madagascar",
+        "location_name": "Antananarivo",
+        "date": "1970-01-01",
+        "last_updated": "2025-01-06 12:45",
+        "uv_index": 16.0
+      },
+      {
+        "country": "Zimbabwe",
+        "location_name": "Harare",
+        "date": "1970-01-01",
+        "last_updated": "2025-01-12 12:30",
+        "uv_index": 16.0
+      },
+      {
+        "country": "Zimbabwe",
+        "location_name": "Harare",
+        "date": "1970-01-01",
+        "last_updated": "2025-01-15 12:30",
+        "uv_index": 16.0
+      },
+      {
+        "country": "Malawi",
+        "location_name": "Lilongwe",
+        "date": "1970-01-01",
+        "last_updated": "2025-02-18 12:00",
+        "uv_index": 16.0
+      },
+      {
+        "country": "Zambia",
+        "location_name": "Lusaka",
+        "date": "1970-01-01",
+        "last_updated": "2025-02-18 12:15",
+        "uv_index": 16.0
+      },
+      {
+        "country": "Ethiopia",
+        "location_name": "Addis Ababa",
+        "date": "1970-01-01",
+        "last_updated": "2025-03-14 12:45",
+        "uv_index": 16.0
+      },
+      {
+        "country": "Kenya",
+        "location_name": "Nairobi",
+        "date": "1970-01-01",
+        "last_updated": "2025-03-22 12:30",
+        "uv_index": 16.0
+      },
+      {
+        "country": "Namibia",
+        "location_name": "Windhoek",
+        "date": "1970-01-01",
+        "last_updated": "2025-01-13 13:30",
+        "uv_index": 15.9
+      }
+    ],
+    "temp_anomaly_count": 251
+  },
+  "regional": {
+    "temperature_celsius": {
+      "highest": {
+        "Saudi Arabien": 45.0,
+        "Marrocos": 40.3,
+        "Turkm\u00e9nistan": 37.8,
+        "\u0422\u0443\u0440\u0446\u0438\u044f": 34.0,
+        "United Arab Emirates": 32.57
+      },
+      "lowest": {
+        "Mongolia": 3.62,
+        "Canada": 5.08,
+        "Iceland": 5.76,
+        "Norway": 8.19,
+        "Kazakhstan": 8.24
+      }
+    },
+    "precip_mm": {
+      "highest": {
+        "Lao People's Democratic Republic": 1.97,
+        "Letonia": 1.83,
+        "Mal\u00e1sia": 1.55,
+        "Malaysia": 0.59,
+        "USA United States of America": 0.53
+      },
+      "lowest": {
+        "Bahrain": 0.0,
+        "Egypt": 0.0,
+        "Estonie": 0.0,
+        "Inde": 0.0,
+        "Komoren": 0.0
+      }
+    },
+    "wind_kph": {
+      "highest": {
+        "Libya": 31.7,
+        "Pol\u00f4nia": 29.5,
+        "Somalia": 27.74,
+        "Saint-Vincent-et-les-Grenadines": 27.0,
+        "Saint Vincent and the Grenadines": 25.9
+      },
+      "lowest": {
+        "S\u00fcdkorea": 4.0,
+        "Chile": 4.38,
+        "Belize": 4.42,
+        "Brazil": 4.43,
+        "Colombia": 4.7
+      }
+    },
+    "humidity": {
+      "highest": {
+        "Belize": 95.81,
+        "Lao People's Democratic Republic": 95.0,
+        "\u0413\u0432\u0430\u0442\u0435\u043c\u0430\u043b\u0430": 95.0,
+        "\u0643\u0648\u0644\u0648\u0645\u0628\u064a\u0627": 95.0,
+        "Guyana": 94.66
+      },
+      "lowest": {
+        "Saudi Arabien": 7.0,
+        "Turkm\u00e9nistan": 11.0,
+        "Marrocos": 14.0,
+        "Saudi Arabia": 17.41,
+        "Yemen": 23.98
+      }
+    }
+  },
+  "trends": {}
+}
