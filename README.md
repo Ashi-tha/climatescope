@@ -157,7 +157,9 @@ dashboard/app.py         →  Interactive Streamlit app
 **Global Weather Repository** — Kaggle  
 https://www.kaggle.com/datasets/nelgiriyewithana/global-weather-repository  
 Daily-updated worldwide weather data: temperature, humidity, precipitation, wind speed, UV index, pressure, visibility, and more.
-=======
+
+---
+
 # climatescope
 Global weather visualization dashboard
->>>>>>> 5ab5246ac6c1660ffa74a9eb4b4032d667a4fa75
+<img width="958" height="471" alt="image" src="https://github.com/user-attachments/assets/0d53d8a9-8d6e-4780-bc48-655f1cf6d418" />
