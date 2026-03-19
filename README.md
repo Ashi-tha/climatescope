@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 # 🌍 ClimateScope
 ### Visualizing Global Weather Trends and Extreme Events
 
